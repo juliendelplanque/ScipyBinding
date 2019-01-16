@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "JRPCClient",
+	"category" : "Scipy-JRPCPython",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "JRPCPythonClient",
+	"type" : "normal"
+}

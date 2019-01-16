@@ -1,0 +1,15 @@
+{
+	"classtraitcomposition" : "TPythonFunctionRunner classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ScipyStats",
+	"commentStamp" : "",
+	"super" : "Object",
+	"traitcomposition" : "TPythonFunctionRunner",
+	"type" : "normal",
+	"classinstvars" : [
+		"uniqueInstance"
+	],
+	"pools" : [ ],
+	"category" : "ScipyBinding"
+}
