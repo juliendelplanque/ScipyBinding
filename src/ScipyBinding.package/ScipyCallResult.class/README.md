@@ -1,1 +1,0 @@
-I wrap a dictionary to store results of a call to scipy as an object (in Python a tuple is returned to allow multi-variables assignment but this is not possible in Pharo).
