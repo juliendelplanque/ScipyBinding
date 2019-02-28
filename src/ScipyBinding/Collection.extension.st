@@ -8,5 +8,5 @@ Collection >> scipyLinearRegression [
 { #category : #'*ScipyBinding' }
 Collection >> scipyLinearRegressionWithXBlock: xBlock yBlock: yBlock [
 	^ ScipyStats uniqueInstance
-		linearRegressionWithX: (self collect: xBlock) y: (self collect: yBlock)
+		linearRegressionWithX: (self collect: xBlock as: Array) y: (self collect: yBlock as: Array)
 ]
