@@ -25,6 +25,24 @@ ScipyCallResult >> doesNotUnderstand: aMessage [
 		ifAbsent: [ super doesNotUnderstand: aMessage ]
 ]
 
+{ #category : #'gt-inspector-extension' }
+ScipyCallResult >> gtInspectorItemsIn: composite [
+	<gtInspectorPresentationOrder: 0>
+	^ (composite fastTable)
+		title: 'Properties';
+		display: [ resultsDict associations ];
+		column: 'Property' 
+			evaluated: [:each | GTObjectPrinter asTruncatedTextFrom: each key ];
+		column: 'Value' 
+			evaluated: [:each | GTObjectPrinter asTruncatedTextFrom: each value ];
+		send: [ :selection | 
+			selection isNil 
+			ifTrue:[nil]
+			ifFalse:[ (selection size = 1) 
+				ifTrue: [ selection anyOne value ] 
+				ifFalse: [ selection collect: #value ] ] ]
+]
+
 { #category : #initialization }
 ScipyCallResult >> initialize [
 	super initialize.
